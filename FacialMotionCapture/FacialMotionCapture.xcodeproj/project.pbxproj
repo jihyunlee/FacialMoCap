@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F1DBE13243D521E000E074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */; };
+		9FA63E96243D564700469E96 /* SwiftOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA63E95243D564700469E96 /* SwiftOSC.framework */; };
+		9FA63E97243D565600469E96 /* SwiftOSC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA63E95243D564700469E96 /* SwiftOSC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9FFD7D332433D4B100C885B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD7D322433D4B100C885B3 /* AppDelegate.swift */; };
 		9FFD7D392433D4B200C885B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D382433D4B200C885B3 /* Assets.xcassets */; };
 		9FFD7D4A2433DCDC00C885B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D492433DCDC00C885B3 /* Main.storyboard */; };
@@ -15,8 +17,23 @@
 		9FFD7D542434052000C885B3 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D532434052000C885B3 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9FA63E92243D561400469E96 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9FA63E97243D565600469E96 /* SwiftOSC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FA63E95243D564700469E96 /* SwiftOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftOSC.framework; sourceTree = "<group>"; };
 		9FFD7D2F2433D4B100C885B3 /* FacialMotionCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialMotionCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFD7D322433D4B100C885B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFD7D382433D4B200C885B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,16 +48,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA63E96243D564700469E96 /* SwiftOSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FA63E94243D564700469E96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FA63E95243D564700469E96 /* SwiftOSC.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FFD7D262433D4B100C885B3 = {
 			isa = PBXGroup;
 			children = (
 				9FFD7D312433D4B100C885B3 /* FacialMotionCapture */,
+				9FA63E94243D564700469E96 /* Frameworks */,
 				9FFD7D302433D4B100C885B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +112,7 @@
 				9FFD7D2B2433D4B100C885B3 /* Sources */,
 				9FFD7D2C2433D4B100C885B3 /* Frameworks */,
 				9FFD7D2D2433D4B100C885B3 /* Resources */,
+				9FA63E92243D561400469E96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,6 +305,10 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XSKMJW8ZDY;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = FacialMotionCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -298,6 +330,10 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XSKMJW8ZDY;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = FacialMotionCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
