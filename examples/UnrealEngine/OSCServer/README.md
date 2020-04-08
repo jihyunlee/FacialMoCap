@@ -9,7 +9,7 @@ UE v4.24 or later
 ## Usage in Blueprint
 
 ### Create an OSC Server 
-IP address and port number in CreateOSCServer node should be matched with iOS
+IP address and port number in CreateOSCServer node should be matched with the target machine's network configuration
 
 <img src="../../../images/ue_create_oscserver.png" />
 
