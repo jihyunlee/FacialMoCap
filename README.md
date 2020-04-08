@@ -44,7 +44,7 @@ let OSC_PORT = 1204
 // Image
 
 
-## Data format
+## Data Format
 ```
 json data sample
 ```
