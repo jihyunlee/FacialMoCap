@@ -1,5 +1,5 @@
 # Facial Motion Capture
-`Facial MoCap` iOS app enables you to use facial blend shape coefficients provided by ARKit in your application via OSC
+`Facial MoCap` iOS app enables you to use facial blend shape coefficients provided by ARKit in your application via [OSC(Open Sound Control)](https://en.wikipedia.org/wiki/Open_Sound_Control)
 
 <b>IMAGE; iPhone screenshot</b>
 
@@ -55,7 +55,7 @@ json data sample
 ```
 
 ## Examples
-There are [examples](/examples) in Cinder and Unreal Engine. As long as your application supports [OSC(Open Sound Control)](https://en.wikipedia.org/wiki/Open_Sound_Control), it can receive blendshape data from the `Facial MoCap` app.
+There are [examples](/examples) in Cinder and Unreal Engine. As long as your application supports OSC, it can receive blendshape data from the `Facial MoCap` app.
 
 
 ## Reference
