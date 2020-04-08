@@ -18,7 +18,9 @@ For each key, the corresponding value is a floating point number indicating the 
 
 2. Find target machine's IP address
 
-// image windows
+For Windows, go to Settings > Network & Internet > View your network properties
+
+<img src="images/network_settings_windows.png" />
 
 For Mac, go to System Preferences > Network and find the IP address
 
