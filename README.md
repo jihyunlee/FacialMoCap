@@ -1,5 +1,5 @@
 # Facial Motion Capture
-`Facial MoCap` iOS app enables to animate a character in real-time using blend shape coefficients recognized by ARKit. 
+`Facial MoCap` iOS app enables you to use facial blend shape coefficients provided by ARKit in your application via OSC
 
 <b>IMAGE; iPhone screenshot</b>
 
