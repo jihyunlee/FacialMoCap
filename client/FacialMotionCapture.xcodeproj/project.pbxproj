@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1DBE13243D521E000E074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */; };
 		9FFD7D332433D4B100C885B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD7D322433D4B100C885B3 /* AppDelegate.swift */; };
 		9FFD7D392433D4B200C885B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D382433D4B200C885B3 /* Assets.xcassets */; };
-		9FFD7D482433DC9000C885B3 /* ARFaceGeometry.obj in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D472433DC9000C885B3 /* ARFaceGeometry.obj */; };
 		9FFD7D4A2433DCDC00C885B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D492433DCDC00C885B3 /* Main.storyboard */; };
 		9FFD7D4E2433E0AC00C885B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD7D4D2433E0AC00C885B3 /* ViewController.swift */; };
 		9FFD7D542434052000C885B3 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D532434052000C885B3 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FFD7D2F2433D4B100C885B3 /* FacialMotionCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialMotionCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFD7D322433D4B100C885B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFD7D382433D4B200C885B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FFD7D402433D4B200C885B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FFD7D472433DC9000C885B3 /* ARFaceGeometry.obj */ = {isa = PBXFileReference; lastKnownFileType = text; name = ARFaceGeometry.obj; path = FacialMotionCapture/ARFaceGeometry.obj; sourceTree = SOURCE_ROOT; };
 		9FFD7D492433DCDC00C885B3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9FFD7D4D2433E0AC00C885B3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FFD7D532434052000C885B3 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 		9FFD7D462433DC5A00C885B3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9FFD7D472433DC9000C885B3 /* ARFaceGeometry.obj */,
 				9FFD7D382433D4B200C885B3 /* Assets.xcassets */,
+				9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */,
 				9FFD7D492433DCDC00C885B3 /* Main.storyboard */,
 				9FFD7D532434052000C885B3 /* Models.scnassets */,
 			);
@@ -135,7 +135,7 @@
 			files = (
 				9FFD7D542434052000C885B3 /* Models.scnassets in Resources */,
 				9FFD7D4A2433DCDC00C885B3 /* Main.storyboard in Resources */,
-				9FFD7D482433DC9000C885B3 /* ARFaceGeometry.obj in Resources */,
+				9F1DBE13243D521E000E074A /* LaunchScreen.storyboard in Resources */,
 				9FFD7D392433D4B200C885B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
