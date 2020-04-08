@@ -14,7 +14,7 @@
 
 
 ### Examples
-There are [examples](/examples) in Cinder and Unreal Engine. As long as your application supports OSC, it can receive blendshape data from the `Facial MoCap` app.
+There are [examples](/examples) in Cinder and Unreal Engine. As long as your application supports [OSC(Open Sound Control)](https://en.wikipedia.org/wiki/Open_Sound_Control), it can receive blendshape data from the `Facial MoCap` app.
 
 ### Reference
 - [ARKit's ARFaceAnchor BlendShapeLocation](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)
