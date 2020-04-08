@@ -37,7 +37,7 @@ For Mac, go to System Preferences > Network and find the IP address
 4. Change `OSC_IP` value with the target machine's IP address at line 15 in [ViewController.swift](FacialMotionCapture/FacialMotionCapture/ViewController.swift)
 
 ```
-let OSC_IP = "192.168.1.100"
+let OSC_IP = "192.168.1.237"
 let OSC_PORT = 1204
 ```
 <img src="images/network_settings_xcode.png" />
