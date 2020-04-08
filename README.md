@@ -8,7 +8,7 @@ For each key, the corresponding value is a floating point number indicating the 
 
 <img src="images/eyeBlinkLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/jawOpen.png" width="400" />
 
-## iOS app installation
+## iOS App Installation
 1. Download Xcode from App Store
 2. Open FacialMotionCapture.xcodeproj with Xcode
 3. Connect your iOS device to Mac
@@ -21,11 +21,15 @@ For each key, the corresponding value is a floating point number indicating the 
 // Image
 
 
-## Set up OSC environment
+## Network Settings for OSC
 
 
 ## Examples
 There are [examples](/examples) in Cinder and Unreal Engine. As long as your application supports [OSC(Open Sound Control)](https://en.wikipedia.org/wiki/Open_Sound_Control), it can receive blendshape data from the `Facial MoCap` app.
+
+```
+json data sample
+```
 
 ## Reference
 - [ARKit's ARFaceAnchor BlendShapeLocation](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)
