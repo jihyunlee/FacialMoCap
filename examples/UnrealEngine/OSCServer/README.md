@@ -13,6 +13,6 @@ IP address and port number in CreateOSCServer node should be matched with iOS
 
 <img src="../../../images/ue_create_oscserver.png" />
 
-### Parse data
+### Parse Data
 
 <img src="../../../images/ue_parse_data.png" />
