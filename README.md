@@ -1,7 +1,7 @@
 # Facial Motion Capture
 `Facial MoCap` iOS app enables you to use facial blend shape coefficients provided by ARKit in your application via [OSC(Open Sound Control)](https://en.wikipedia.org/wiki/Open_Sound_Control)
 
-<b>IMAGE; iPhone screenshot</b>
+<img src="images/eyeBlinkLeft_ios.png" width="300" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/jawOpen_ios.png" width="300" />
 
 ## Requirements
 Check your iOS device compatibility with ARKit from [here](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/DeviceCompatibilityMatrix/DeviceCompatibilityMatrix.html)
