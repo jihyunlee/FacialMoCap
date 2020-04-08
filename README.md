@@ -38,6 +38,7 @@ For Mac, go to System Preferences > Network and find the IP address
 let OSC_IP = "192.168.1.100"
 let OSC_PORT = 1204
 ```
+<img src="images/network_settings_xcode.png" />
 
 5. Create an OSC server with the same IP address and port number in your target application 
 
