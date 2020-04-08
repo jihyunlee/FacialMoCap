@@ -52,10 +52,14 @@ For each key, the corresponding value is a floating point number indicating the 
 <img src="images/browInnerUp.png" width="400" />
 
 ### Cheeks
+<img src="images/cheekSquintLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/cheekSquintRight.png" width="400" />
+
+<img src="images/cheekPuff.png" width="400" />
 
 ### Nose
+<img src="images/noseSneerLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/noseSneerRight.png" width="400" />
 
 ### Tongue
-
+A value of 0.0 indicates that the tongue is fully inside the mouth; a value of 1.0 indicates that the tongue is as far out of the mouth as ARKit tracks.
 
 
