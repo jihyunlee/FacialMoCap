@@ -3,6 +3,9 @@
 ## Requirement
 UE v4.24 or later
 
+## Dependencies
+- [JsonBlueprint](./Plugins/JsonBlueprint) plugin
+
 ## Usage in Blueprint
 
 ### Create an OSC Server 
