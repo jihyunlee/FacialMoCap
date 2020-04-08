@@ -38,6 +38,7 @@ For Mac, go to System Preferences > Network and find the IP address
 let OSC_IP = "192.168.1.100"
 let OSC_PORT = 1204
 ```
+<img src="images/network_settings_xcode.png" />
 
 5. Create an OSC server with the same IP address and port number in your target application 
 
@@ -48,11 +49,11 @@ let OSC_PORT = 1204
 3. Connect your iOS device to Mac
 4. Add `The Mill Group Inc` to Team in Signing & Capabilities tab; ask Jimmy to add you with your @themill.com email to the Apple developer account
 
-// Image
+<img src="images/ios_app_installation_signing.png" />
 
 5. Run(Command + R) the project or find the menu Run from Product
 
-// Image
+<img src="images/ios_app_installation_deployment.png" />
 
 
 ## Data Format
