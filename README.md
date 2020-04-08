@@ -21,12 +21,16 @@ For each key, the corresponding value is a floating point number indicating the 
 // image windows
 
 For Mac, go to System Preferences > Network and find the IP address
+
 <img src="images/network_settings_mac.png" />
 
 
-3. Check network settings on iOS device
+3. Check network settings on iOS device. Go to Settings > Wi-Fi > Select your network and check the following:
+- IP Address: 192.168.1.247 the first three number should be matched with your machine
+- Subnet Mask: 255.255.255.0
+- Router: 192.168.1.1 the first three number should be matched with your machine and the last number usually 1
 
-// image iphone
+<img src="images/network_settings_ios.png" />
 
 4. Change `OSC_IP` value with the target machine's IP address at line 15 in [ViewController.swift](FacialMotionCapture/FacialMotionCapture/ViewController.swift)
 
