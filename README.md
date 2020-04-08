@@ -3,10 +3,10 @@
 
 <b>IMAGE; iPhone screenshot</b>
 
-### ARKit's Blendshape Location
+## ARKit's Blendshape Location
 For each key, the corresponding value is a floating point number indicating the current position of that feature relative to its neutral configuration, ranging from 0.0 (neutral) to 1.0 (maximum movement)
 
-#### Eyes
+### Eyes
 <img src="images/eyeBlinkLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/eyeBlinkRight.png" width="400" />
 
 <img src="images/eyeLookDownLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/eyeLookDownRight.png" width="400" />
@@ -21,23 +21,23 @@ For each key, the corresponding value is a floating point number indicating the 
 
 <img src="images/eyeWideLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/eyeWideRight.png" width="400" />
 
-#### Jaw
+### Jaw
 <img src="images/jawOpen.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/jawForward.png" width="400" />
 
 <img src="images/jawLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/jawRight.png" width="400" />
 
 
 
-### iOS app installation
+## iOS app installation
 1. Download Xcode from App Store
 2. Open FacialMotionCapture.xcodeproj with Xcode
 3. 
 
-### Set up OSC environment
+## Set up OSC environment
 
 
-### Examples
+## Examples
 There are [examples](/examples) in Cinder and Unreal Engine. As long as your application supports [OSC(Open Sound Control)](https://en.wikipedia.org/wiki/Open_Sound_Control), it can receive blendshape data from the `Facial MoCap` app.
 
-### Reference
+## Reference
 - [ARKit's ARFaceAnchor BlendShapeLocation](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)
