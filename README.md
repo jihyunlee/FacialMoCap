@@ -12,10 +12,14 @@ For each key, the corresponding value is a floating point number indicating the 
 1. Configure both your iOS device and target machine where your application is running with the same network
 
 2. Find target machine's IP address
+// image windows
+
+// image mac
 
 3. Check network settings on iOS device
+// image iphone
 
-4. Change `OSC_IP` value with target machine's IP address at line 15 in [ViewController.swift](FacialMotionCapture/FacialMotionCapture/ViewController.swift)
+4. Change `OSC_IP` value with the target machine's IP address at line 15 in [ViewController.swift](FacialMotionCapture/FacialMotionCapture/ViewController.swift)
 
 ```
 let OSC_IP = "192.168.1.100"
