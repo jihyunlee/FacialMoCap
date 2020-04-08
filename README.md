@@ -20,7 +20,9 @@ For each key, the corresponding value is a floating point number indicating the 
 
 // image windows
 
-// image mac
+For Mac, go to System Preferences > Network and find the IP address
+<img src="images/network_settings_mac.png" />
+
 
 3. Check network settings on iOS device
 
