@@ -55,7 +55,7 @@ json data sample
 ```
 
 ## Examples
-There are [examples](/examples) in Cinder and Unreal Engine. As long as your application supports OSC, it can receive blendshape data from the `Facial MoCap` app.
+Check out [examples](/examples)
 
 
 ## Reference
