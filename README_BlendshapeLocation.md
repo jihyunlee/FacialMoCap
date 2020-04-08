@@ -22,7 +22,7 @@ For each key, the corresponding value is a floating point number indicating the 
 <img src="images/jawLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/jawRight.png" width="400" />
 
 ### Mouth
-<img src="images/mouthClose.png" width="500" />
+<img src="images/mouthClose.png" width="640" />
 
 <img src="images/mouthFunnel.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/mouthPucker.png" width="400" />
 
@@ -45,6 +45,11 @@ For each key, the corresponding value is a floating point number indicating the 
 <img src="images/mouthUpperUpLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/mouthUpperUpRight.png" width="400" />
 
 ### Eyebrows
+<img src="images/browDownLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/browDownRight.png" width="400" />
+
+<img src="images/browOutterUpLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/browOutterUpRight.png" width="400" />
+
+<img src="images/browInnerUp.png" width="400" />
 
 ### Cheeks
 
