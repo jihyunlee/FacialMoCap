@@ -22,7 +22,7 @@ let OSC_IP = "192.168.1.100"
 let OSC_PORT = 1204
 ```
 
-5. Configure your target application with the same IP address and port number
+5. Create an OSC server with the same IP address and port number in your target application 
 
 
 ## iOS App Installation
