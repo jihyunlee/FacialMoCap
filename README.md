@@ -30,7 +30,7 @@ For Mac, go to System Preferences > Network and find the IP address
 - Subnet Mask: 255.255.255.0
 - Router: 192.168.1.1 the first three number should be matched with your machine and the last number usually 1
 
-<img src="images/network_settings_ios.png" />
+<img src="images/network_settings_ios.png" width="300" />
 
 4. Change `OSC_IP` value with the target machine's IP address at line 15 in [ViewController.swift](FacialMotionCapture/FacialMotionCapture/ViewController.swift)
 
