@@ -21,8 +21,10 @@ For each key, the corresponding value is a floating point number indicating the 
 
 <img src="images/eyeWideLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/eyeWideRight.png" width="400" />
 
-##### Jaw
-<img src="images/jawOpen.png" width="300" />
+#### Jaw
+<img src="images/jawOpen.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/jawForward.png" width="400" />
+
+<img src="images/jawLeft.png" width="400" />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="images/jawRight.png" width="400" />
 
 
 
