@@ -1,0 +1,21 @@
+{
+  "PluginFileVersion": 3,
+  "Version": 1,
+  "VersionName": "1.0",
+  "FriendlyName": "MillX Utils Blueprint Library",
+  "Description": "",
+  "Category": "Blueprints",
+  "CreatedBy": "MillX",
+  "CreatedByURL": "",
+  "EnabledByDefault": false,
+  "CanContainContent": true,
+  "IsBetaVersion": true,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "MillXUtils",
+      "Type": "Runtime",
+      "LoadingPhase": "PreLoadingScreen"
+    }
+  ]
+}

@@ -11,18 +11,33 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
+let UDP_IPADDRESSES = ["10.63.111.129", "10.63.111.130"]
+let UDP_PORT = 1204
+
+class ViewController: UIViewController, UIGestureRecognizerDelegate, ARSCNViewDelegate, ARSessionDelegate {
     
     // MARK: Outlets
 
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var iconsView: UIView!
+    @IBOutlet weak var slidersView: SliderView!
+    @IBOutlet weak var sliderIcon: UIImageView!
 
     // MARK: Properties
     
     var contentNode: SCNNode?
     var currentFaceAnchor: ARFaceAnchor?
-
     
+    var blendShapesArray: [String] = []
+
+    // Network
+    var socket = UDPBroadcaster(port: UDP_PORT)
+    
+    var showIPAddressView = false
+    var showSliderView = false
+    var showMesh = false
+    var isRecording = false
+
     // MARK: - View Controller Life Cycle
 
     override func viewDidLoad() {
@@ -31,11 +46,22 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         sceneView.delegate = self
         sceneView.session.delegate = self
         sceneView.automaticallyUpdatesLighting = true
+        sceneView.showsStatistics = false
         
+        // Icon bar
+        self.sliderIcon.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector(("onSliders:"))))
+        self.sliderIcon.isUserInteractionEnabled = true
+        
+        // Load model
         guard let url = Bundle.main.url(forResource: "model", withExtension: "scn", subdirectory: "Models.scnassets") else { fatalError("Model resource not in bundle!") }
         let modelNode = SCNReferenceNode(url: url)!
         modelNode.load()
         contentNode = modelNode
+        
+        // Init a list of IP addresses to broadcast
+        socket.setIpAddresses(array: UDP_IPADDRESSES)
+        
+        slidersView._init()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -93,54 +119,37 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         guard let faceAnchor = anchor as? ARFaceAnchor
             else { return }
    
-        let blendShapes = faceAnchor.blendShapes
+        var jsonObject: [String : Float] = [:]
 
         DispatchQueue.main.async {
             
-            // This will only work correctly if the shape keys are given the exact same name as the blendshape names
-            print("-----------------------------------------")
-            for (key, value) in blendShapes {
-                if let fValue = value as? Float {
-                    print(key.rawValue, ": ", CGFloat(fValue))
+            for (key, value) in faceAnchor.blendShapes {
+                if var fValue = value as? Float {
+
+                    // clamp the value
+                    fValue = fValue.clamped(to: 0.0...1.0)
+                    
+                    // remap
+                    if let range = self.slidersView.ranges.first(where: {$0.name == key.rawValue}) {
+                        fValue = fValue * Float(range.max - range.min) + Float(range.min);
+                    }
+
+                    jsonObject[key.rawValue] = round(10000 * fValue)/10000
                     self.contentNode?.childNodes[0].morpher?.setWeight(CGFloat(fValue), forTargetNamed: key.rawValue)
                 }
             }
+            
+            var jsonString = "{"
+            jsonString.append(jsonObject.map{ "\"\($0)\":\($1)" }.joined(separator: ","))
+            jsonString.append("}")
+//            print(jsonString)
+                
+            if(self.isRecording) {
+                self.blendShapesArray.append(jsonString)
+            }
+            
+            _ = self.socket.sendToList(jsonString)
         }
-        
-        // Reference:
-        // ARFaceAnchor.BlendShapeLocation
-        // https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation
-        
-        // Eye:
-        // eyeBlinkLeft, eyeLookDownLeft, eyeLookInLeft, eyeLookOutLeft, eyeLookUpLeft, eyeSquintLeft, eyeWideLeft
-        // eyeBlinkRight, eyeLookDownRight, eyeLookInRight, eyeLookOutRight, eyeLookUpRight, eyeSquintRight, eyeWideRight
-        
-        // Jaw:
-        // jawForward, jawLeft, jawRight, jawOpen
-        
-        // Mouth:
-        // mouthClose, mouthFunnel, mouthPucker, mouthLeft, mouthRight, mouthSmileLeft, mouthSmileRight,
-        // mouthFrownLeft, mouthFrownRight, mouthDimpleLeft, mouthDimpleRight, mouthStretchLeft, mouthStretchRight
-        // mouthRollLower, mouthRollUpper, mouthShrugLower, mouthShrugUpper, mouthPressLeft, mouthPressRight
-        // mouthLowerDownLeft, mouthLowerDownRight, mouthUpperUpLeft, mouthUpperUpRight
-
-        // Eyebrows:
-        // browDownLeft, browDownRight, browInnerUp, browOuterUpLeft, browOuterUpRight
-        
-        // Cheeks:
-        // cheekPuff, cheekSquintLeft, cheekSquintRight
-        
-        // Nose:
-        // noseSneerLeft, noseSneerRight
-        
-        // Tongue:
-        // tongueOut
-        
-        
-        // example
-//        if let eyeBlinkRight = blendShapes[.eyeBlinkRight] as? Float {
-//            print("eyeBlinkRight: ", eyeBlinkRight)
-//        }
     }
     
     
@@ -157,4 +166,51 @@ class ViewController: UIViewController, ARSCNViewDelegate, ARSessionDelegate {
         present(alertController, animated: true, completion: nil)
     }
     
+    // MARK: - Record
+    
+    @IBAction func onRecord(_ sender: UIButton) {
+        
+        if(!self.isRecording) {
+            if let image = UIImage(named: "StopImage") {
+                sender.setImage(image, for: .normal)
+            }
+            
+            self.blendShapesArray = []
+            self.isRecording = true
+        }
+        else {
+            if let image = UIImage(named: "RecordImage") {
+                sender.setImage(image, for: .normal)
+            }
+            
+            self.isRecording = false
+            _FileManager.writeFile(array: self.blendShapesArray)
+        }
+    }
+    
+    // MARK: - Blendshape Location Sliders
+    
+    @IBAction func onSliders(_ sender: UIImageView) {
+        
+        self.slidersView.isHidden = self.showSliderView
+        
+        if self.showSliderView {
+            sliderIcon.image = UIImage(named: "SliderIcon")
+            
+            ViewController.viewSlideInFromTopToBottom(view: self.slidersView)
+        }
+        else {
+            sliderIcon.image = UIImage(named: "SliderFillIcon")
+            ViewController.viewSlideInFromBottomToTop(view: self.slidersView)
+        }
+
+        self.showSliderView = !self.showSliderView
+    }
+    
+}
+
+extension Comparable {
+    func clamped(to limits: ClosedRange<Self>) -> Self {
+        return min(max(self, limits.lowerBound), limits.upperBound)
+    }
 }

@@ -1,0 +1,178 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{09C98713-8992-494C-AFCC-5A9D29BF313C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Asio">
+      <UniqueIdentifier>{965A7F68-A2F6-4C0C-94E8-547B45269352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Asio\src">
+      <UniqueIdentifier>{E0289721-EE7E-4455-B5DC-FE621D46AC60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC">
+      <UniqueIdentifier>{0D33AFAB-4506-4A69-B8C8-D1F1CCF43D50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src">
+      <UniqueIdentifier>{33E69BF1-64E7-4A34-862D-ABDE81D9E3C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src\cinder">
+      <UniqueIdentifier>{DE0E8DB7-419E-41DD-87BC-C1404A5B941A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\OSC\src\cinder\osc">
+      <UniqueIdentifier>{A7726CC0-3428-4E72-B796-48E692691B91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\FacialMoCapLiveLinkApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FacialMoCapLiveLinkApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\Asio\src\ClientInterface.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\DispatcherInterface.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\ServerInterface.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\SessionInterface.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\TcpClient.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\TcpServer.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\TcpSession.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\UdpClient.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\UdpServer.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\UdpSession.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Asio\src\WaitTimer.cpp">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\blocks\Asio\src\CinderAsio.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\ClientEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\ClientInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\DispatcherEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\DispatcherInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\ServerEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\ServerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\SessionEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\SessionInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\TcpClient.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\TcpClientEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\TcpServer.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\TcpServerEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\TcpSession.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\TcpSessionEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\UdpClient.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\UdpClientEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\UdpServer.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\UdpServerEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\UdpSession.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\UdpSessionEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\WaitTimer.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Asio\src\WaitTimerEventHandlerInterface.h">
+      <Filter>Blocks\Asio\src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\OSC\src\cinder\osc\Osc.cpp">
+      <Filter>Blocks\OSC\src\cinder\osc</Filter>
+    </ClCompile>
+    <ClInclude Include="..\blocks\OSC\src\cinder\osc\Osc.h">
+      <Filter>Blocks\OSC\src\cinder\osc</Filter>
+    </ClInclude>
+    <ClCompile Include="..\src\SocketManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\OSCManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SocketManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\OSCManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

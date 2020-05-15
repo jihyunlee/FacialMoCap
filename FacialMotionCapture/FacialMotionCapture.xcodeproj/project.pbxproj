@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9F1DBE13243D521E000E074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */; };
-		9FA63E96243D564700469E96 /* SwiftOSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA63E95243D564700469E96 /* SwiftOSC.framework */; };
-		9FA63E97243D565600469E96 /* SwiftOSC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FA63E95243D564700469E96 /* SwiftOSC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F2361DF24621971002BA76F /* UDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2361DE24621971002BA76F /* UDPSocket.swift */; };
+		9F2361E2246219C5002BA76F /* UDPSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F2361E1246219C5002BA76F /* UDPSocket.c */; };
+		9F3B91532464C3BC00830DBF /* RangeSeekSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B91502464C3BC00830DBF /* RangeSeekSlider.swift */; };
+		9F3B91542464C3BC00830DBF /* RangeSeekSliderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B91512464C3BC00830DBF /* RangeSeekSliderDelegate.swift */; };
+		9F3B915724666DDB00830DBF /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B915624666DDB00830DBF /* TapticEngine.swift */; };
+		9F3B915A2466702100830DBF /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B91592466702100830DBF /* FileManager.swift */; };
+		9F3B915C246672D000830DBF /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B915B246672D000830DBF /* SliderView.swift */; };
+		9F3B915E2466777600830DBF /* ViewTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B915D2466777600830DBF /* ViewTransition.swift */; };
+		9F87457B243BA00D00796A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F87457A243BA00D00796A77 /* LaunchScreen.storyboard */; };
 		9FFD7D332433D4B100C885B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD7D322433D4B100C885B3 /* AppDelegate.swift */; };
 		9FFD7D392433D4B200C885B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D382433D4B200C885B3 /* Assets.xcassets */; };
 		9FFD7D4A2433DCDC00C885B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D492433DCDC00C885B3 /* Main.storyboard */; };
@@ -17,23 +23,16 @@
 		9FFD7D542434052000C885B3 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFD7D532434052000C885B3 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9FA63E92243D561400469E96 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9FA63E97243D565600469E96 /* SwiftOSC.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9FA63E95243D564700469E96 /* SwiftOSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftOSC.framework; sourceTree = "<group>"; };
+		9F2361DE24621971002BA76F /* UDPSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPSocket.swift; sourceTree = "<group>"; };
+		9F2361E1246219C5002BA76F /* UDPSocket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = UDPSocket.c; sourceTree = "<group>"; };
+		9F3B91502464C3BC00830DBF /* RangeSeekSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSlider.swift; sourceTree = "<group>"; };
+		9F3B91512464C3BC00830DBF /* RangeSeekSliderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RangeSeekSliderDelegate.swift; sourceTree = "<group>"; };
+		9F3B915624666DDB00830DBF /* TapticEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapticEngine.swift; sourceTree = "<group>"; };
+		9F3B91592466702100830DBF /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		9F3B915B246672D000830DBF /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		9F3B915D2466777600830DBF /* ViewTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTransition.swift; sourceTree = "<group>"; };
+		9F87457A243BA00D00796A77 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FFD7D2F2433D4B100C885B3 /* FacialMotionCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialMotionCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFD7D322433D4B100C885B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFD7D382433D4B200C885B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,26 +47,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA63E96243D564700469E96 /* SwiftOSC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9FA63E94243D564700469E96 /* Frameworks */ = {
+		9F3B915824666DDF00830DBF /* RangeSeekSlider */ = {
 			isa = PBXGroup;
 			children = (
-				9FA63E95243D564700469E96 /* SwiftOSC.framework */,
+				9F3B915624666DDB00830DBF /* TapticEngine.swift */,
+				9F3B91502464C3BC00830DBF /* RangeSeekSlider.swift */,
+				9F3B91512464C3BC00830DBF /* RangeSeekSliderDelegate.swift */,
 			);
-			path = Frameworks;
+			path = RangeSeekSlider;
 			sourceTree = "<group>";
 		};
 		9FFD7D262433D4B100C885B3 = {
 			isa = PBXGroup;
 			children = (
 				9FFD7D312433D4B100C885B3 /* FacialMotionCapture */,
-				9FA63E94243D564700469E96 /* Frameworks */,
 				9FFD7D302433D4B100C885B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,8 +82,14 @@
 		9FFD7D312433D4B100C885B3 /* FacialMotionCapture */ = {
 			isa = PBXGroup;
 			children = (
+				9F3B915824666DDF00830DBF /* RangeSeekSlider */,
 				9FFD7D322433D4B100C885B3 /* AppDelegate.swift */,
+				9F3B91592466702100830DBF /* FileManager.swift */,
+				9F3B915B246672D000830DBF /* SliderView.swift */,
 				9FFD7D4D2433E0AC00C885B3 /* ViewController.swift */,
+				9F3B915D2466777600830DBF /* ViewTransition.swift */,
+				9F2361DE24621971002BA76F /* UDPSocket.swift */,
+				9F2361E1246219C5002BA76F /* UDPSocket.c */,
 				9FFD7D402433D4B200C885B3 /* Info.plist */,
 				9FFD7D462433DC5A00C885B3 /* Resources */,
 			);
@@ -95,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9FFD7D382433D4B200C885B3 /* Assets.xcassets */,
-				9F1DBE12243D521E000E074A /* LaunchScreen.storyboard */,
+				9F87457A243BA00D00796A77 /* LaunchScreen.storyboard */,
 				9FFD7D492433DCDC00C885B3 /* Main.storyboard */,
 				9FFD7D532434052000C885B3 /* Models.scnassets */,
 			);
@@ -112,7 +117,6 @@
 				9FFD7D2B2433D4B100C885B3 /* Sources */,
 				9FFD7D2C2433D4B100C885B3 /* Frameworks */,
 				9FFD7D2D2433D4B100C885B3 /* Resources */,
-				9FA63E92243D561400469E96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +139,7 @@
 				TargetAttributes = {
 					9FFD7D2E2433D4B100C885B3 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -162,8 +167,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FFD7D542434052000C885B3 /* Models.scnassets in Resources */,
+				9F87457B243BA00D00796A77 /* LaunchScreen.storyboard in Resources */,
 				9FFD7D4A2433DCDC00C885B3 /* Main.storyboard in Resources */,
-				9F1DBE13243D521E000E074A /* LaunchScreen.storyboard in Resources */,
 				9FFD7D392433D4B200C885B3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,8 +180,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F3B915724666DDB00830DBF /* TapticEngine.swift in Sources */,
 				9FFD7D332433D4B100C885B3 /* AppDelegate.swift in Sources */,
+				9F3B91532464C3BC00830DBF /* RangeSeekSlider.swift in Sources */,
+				9F3B915C246672D000830DBF /* SliderView.swift in Sources */,
 				9FFD7D4E2433E0AC00C885B3 /* ViewController.swift in Sources */,
+				9F3B91542464C3BC00830DBF /* RangeSeekSliderDelegate.swift in Sources */,
+				9F2361E2246219C5002BA76F /* UDPSocket.c in Sources */,
+				9F2361DF24621971002BA76F /* UDPSocket.swift in Sources */,
+				9F3B915A2466702100830DBF /* FileManager.swift in Sources */,
+				9F3B915E2466777600830DBF /* ViewTransition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +314,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XSKMJW8ZDY;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FacialMotionCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.themill.FacialMoCap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,14 +338,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = XSKMJW8ZDY;
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = FacialMotionCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

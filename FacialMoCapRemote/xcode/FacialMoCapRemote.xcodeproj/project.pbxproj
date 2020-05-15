@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		354D7493C01C468584940AD3 /* FacialMoCapRemoteApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B01B88A3D9AB4404AD8D4D04 /* FacialMoCapRemoteApp.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9F3B9188246B595700830DBF /* TcpServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9168246B595600830DBF /* TcpServer.cpp */; };
+		9F3B9189246B595700830DBF /* UdpSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9169246B595600830DBF /* UdpSession.cpp */; };
+		9F3B918A246B595700830DBF /* UdpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B916B246B595600830DBF /* UdpClient.cpp */; };
+		9F3B918B246B595700830DBF /* TcpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9170246B595600830DBF /* TcpClient.cpp */; };
+		9F3B918C246B595700830DBF /* ClientInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9172246B595600830DBF /* ClientInterface.cpp */; };
+		9F3B918D246B595700830DBF /* DispatcherInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9176246B595600830DBF /* DispatcherInterface.cpp */; };
+		9F3B918E246B595700830DBF /* SessionInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9178246B595600830DBF /* SessionInterface.cpp */; };
+		9F3B918F246B595700830DBF /* UdpServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B917A246B595700830DBF /* UdpServer.cpp */; };
+		9F3B9190246B595700830DBF /* ServerInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B917B246B595700830DBF /* ServerInterface.cpp */; };
+		9F3B9191246B595700830DBF /* TcpSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9184246B595700830DBF /* TcpSession.cpp */; };
+		9F3B9192246B595700830DBF /* WaitTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9185246B595700830DBF /* WaitTimer.cpp */; };
+		9F3B9256246C87DF00830DBF /* SocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F3B9254246C87DF00830DBF /* SocketManager.cpp */; };
+		FF9469D21F8F4846927C3085 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = 369711ABE1224ED8AFD25AF8 /* CinderApp.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		369711ABE1224ED8AFD25AF8 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		3EE239CEF7B649619700C6B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* FacialMoCapRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialMoCapRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3B9166246B595600830DBF /* TcpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpSession.h; path = "../blocks/Cinder-Asio/src/TcpSession.h"; sourceTree = "<group>"; };
+		9F3B9167246B595600830DBF /* CinderAsio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CinderAsio.h; path = "../blocks/Cinder-Asio/src/CinderAsio.h"; sourceTree = "<group>"; };
+		9F3B9168246B595600830DBF /* TcpServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TcpServer.cpp; path = "../blocks/Cinder-Asio/src/TcpServer.cpp"; sourceTree = "<group>"; };
+		9F3B9169246B595600830DBF /* UdpSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UdpSession.cpp; path = "../blocks/Cinder-Asio/src/UdpSession.cpp"; sourceTree = "<group>"; };
+		9F3B916A246B595600830DBF /* ServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerInterface.h; path = "../blocks/Cinder-Asio/src/ServerInterface.h"; sourceTree = "<group>"; };
+		9F3B916B246B595600830DBF /* UdpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UdpClient.cpp; path = "../blocks/Cinder-Asio/src/UdpClient.cpp"; sourceTree = "<group>"; };
+		9F3B916C246B595600830DBF /* TcpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpServer.h; path = "../blocks/Cinder-Asio/src/TcpServer.h"; sourceTree = "<group>"; };
+		9F3B916D246B595600830DBF /* TcpSessionEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpSessionEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/TcpSessionEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B916E246B595600830DBF /* ClientEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/ClientEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B916F246B595600830DBF /* TcpClientEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpClientEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/TcpClientEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B9170246B595600830DBF /* TcpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TcpClient.cpp; path = "../blocks/Cinder-Asio/src/TcpClient.cpp"; sourceTree = "<group>"; };
+		9F3B9171246B595600830DBF /* ServerEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServerEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/ServerEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B9172246B595600830DBF /* ClientInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ClientInterface.cpp; path = "../blocks/Cinder-Asio/src/ClientInterface.cpp"; sourceTree = "<group>"; };
+		9F3B9173246B595600830DBF /* UdpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UdpSession.h; path = "../blocks/Cinder-Asio/src/UdpSession.h"; sourceTree = "<group>"; };
+		9F3B9174246B595600830DBF /* DispatcherEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DispatcherEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/DispatcherEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B9175246B595600830DBF /* TcpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpClient.h; path = "../blocks/Cinder-Asio/src/TcpClient.h"; sourceTree = "<group>"; };
+		9F3B9176246B595600830DBF /* DispatcherInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DispatcherInterface.cpp; path = "../blocks/Cinder-Asio/src/DispatcherInterface.cpp"; sourceTree = "<group>"; };
+		9F3B9177246B595600830DBF /* ClientInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientInterface.h; path = "../blocks/Cinder-Asio/src/ClientInterface.h"; sourceTree = "<group>"; };
+		9F3B9178246B595600830DBF /* SessionInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SessionInterface.cpp; path = "../blocks/Cinder-Asio/src/SessionInterface.cpp"; sourceTree = "<group>"; };
+		9F3B9179246B595600830DBF /* TcpServerEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TcpServerEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/TcpServerEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B917A246B595700830DBF /* UdpServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UdpServer.cpp; path = "../blocks/Cinder-Asio/src/UdpServer.cpp"; sourceTree = "<group>"; };
+		9F3B917B246B595700830DBF /* ServerInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ServerInterface.cpp; path = "../blocks/Cinder-Asio/src/ServerInterface.cpp"; sourceTree = "<group>"; };
+		9F3B917C246B595700830DBF /* UdpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UdpClient.h; path = "../blocks/Cinder-Asio/src/UdpClient.h"; sourceTree = "<group>"; };
+		9F3B917D246B595700830DBF /* DispatcherInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DispatcherInterface.h; path = "../blocks/Cinder-Asio/src/DispatcherInterface.h"; sourceTree = "<group>"; };
+		9F3B917E246B595700830DBF /* SessionEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/SessionEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B917F246B595700830DBF /* UdpClientEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UdpClientEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/UdpClientEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B9180246B595700830DBF /* UdpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UdpServer.h; path = "../blocks/Cinder-Asio/src/UdpServer.h"; sourceTree = "<group>"; };
+		9F3B9181246B595700830DBF /* UdpServerEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UdpServerEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/UdpServerEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B9182246B595700830DBF /* UdpSessionEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UdpSessionEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/UdpSessionEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B9183246B595700830DBF /* SessionInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionInterface.h; path = "../blocks/Cinder-Asio/src/SessionInterface.h"; sourceTree = "<group>"; };
+		9F3B9184246B595700830DBF /* TcpSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TcpSession.cpp; path = "../blocks/Cinder-Asio/src/TcpSession.cpp"; sourceTree = "<group>"; };
+		9F3B9185246B595700830DBF /* WaitTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WaitTimer.cpp; path = "../blocks/Cinder-Asio/src/WaitTimer.cpp"; sourceTree = "<group>"; };
+		9F3B9186246B595700830DBF /* WaitTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaitTimer.h; path = "../blocks/Cinder-Asio/src/WaitTimer.h"; sourceTree = "<group>"; };
+		9F3B9187246B595700830DBF /* WaitTimerEventHandlerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaitTimerEventHandlerInterface.h; path = "../blocks/Cinder-Asio/src/WaitTimerEventHandlerInterface.h"; sourceTree = "<group>"; };
+		9F3B9254246C87DF00830DBF /* SocketManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SocketManager.cpp; path = ../src/SocketManager.cpp; sourceTree = "<group>"; };
+		9F3B9255246C87DF00830DBF /* SocketManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SocketManager.h; path = ../src/SocketManager.h; sourceTree = "<group>"; };
+		B01B88A3D9AB4404AD8D4D04 /* FacialMoCapRemoteApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = FacialMoCapRemoteApp.cpp; path = ../src/FacialMoCapRemoteApp.cpp; sourceTree = "<group>"; };
+		F5803C443F524654BE86C155 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B9165246B593300830DBF /* Cinder-Asio */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B01B88A3D9AB4404AD8D4D04 /* FacialMoCapRemoteApp.cpp */,
+				9F3B9254246C87DF00830DBF /* SocketManager.cpp */,
+				9F3B9255246C87DF00830DBF /* SocketManager.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* FacialMoCapRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* FacialMoCapRemote */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = FacialMoCapRemote;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F5803C443F524654BE86C155 /* Resources.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				369711ABE1224ED8AFD25AF8 /* CinderApp.icns */,
+				3EE239CEF7B649619700C6B6 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F3B9165246B593300830DBF /* Cinder-Asio */ = {
+			isa = PBXGroup;
+			children = (
+				9F3B9167246B595600830DBF /* CinderAsio.h */,
+				9F3B916E246B595600830DBF /* ClientEventHandlerInterface.h */,
+				9F3B9172246B595600830DBF /* ClientInterface.cpp */,
+				9F3B9177246B595600830DBF /* ClientInterface.h */,
+				9F3B9174246B595600830DBF /* DispatcherEventHandlerInterface.h */,
+				9F3B9176246B595600830DBF /* DispatcherInterface.cpp */,
+				9F3B917D246B595700830DBF /* DispatcherInterface.h */,
+				9F3B9171246B595600830DBF /* ServerEventHandlerInterface.h */,
+				9F3B917B246B595700830DBF /* ServerInterface.cpp */,
+				9F3B916A246B595600830DBF /* ServerInterface.h */,
+				9F3B917E246B595700830DBF /* SessionEventHandlerInterface.h */,
+				9F3B9178246B595600830DBF /* SessionInterface.cpp */,
+				9F3B9183246B595700830DBF /* SessionInterface.h */,
+				9F3B9170246B595600830DBF /* TcpClient.cpp */,
+				9F3B9175246B595600830DBF /* TcpClient.h */,
+				9F3B916F246B595600830DBF /* TcpClientEventHandlerInterface.h */,
+				9F3B9168246B595600830DBF /* TcpServer.cpp */,
+				9F3B916C246B595600830DBF /* TcpServer.h */,
+				9F3B9179246B595600830DBF /* TcpServerEventHandlerInterface.h */,
+				9F3B9184246B595700830DBF /* TcpSession.cpp */,
+				9F3B9166246B595600830DBF /* TcpSession.h */,
+				9F3B916D246B595600830DBF /* TcpSessionEventHandlerInterface.h */,
+				9F3B916B246B595600830DBF /* UdpClient.cpp */,
+				9F3B917C246B595700830DBF /* UdpClient.h */,
+				9F3B917F246B595700830DBF /* UdpClientEventHandlerInterface.h */,
+				9F3B917A246B595700830DBF /* UdpServer.cpp */,
+				9F3B9180246B595700830DBF /* UdpServer.h */,
+				9F3B9181246B595700830DBF /* UdpServerEventHandlerInterface.h */,
+				9F3B9169246B595600830DBF /* UdpSession.cpp */,
+				9F3B9173246B595600830DBF /* UdpSession.h */,
+				9F3B9182246B595700830DBF /* UdpSessionEventHandlerInterface.h */,
+				9F3B9185246B595700830DBF /* WaitTimer.cpp */,
+				9F3B9186246B595700830DBF /* WaitTimer.h */,
+				9F3B9187246B595700830DBF /* WaitTimerEventHandlerInterface.h */,
+			);
+			name = "Cinder-Asio";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* FacialMoCapRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FacialMoCapRemote" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FacialMoCapRemote;
+			productInstallPath = "$(HOME)/Applications";
+			productName = FacialMoCapRemote;
+			productReference = 8D1107320486CEB800E47090 /* FacialMoCapRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FacialMoCapRemote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* FacialMoCapRemote */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* FacialMoCapRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF9469D21F8F4846927C3085 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3B918C246B595700830DBF /* ClientInterface.cpp in Sources */,
+				9F3B9188246B595700830DBF /* TcpServer.cpp in Sources */,
+				9F3B918F246B595700830DBF /* UdpServer.cpp in Sources */,
+				9F3B918E246B595700830DBF /* SessionInterface.cpp in Sources */,
+				354D7493C01C468584940AD3 /* FacialMoCapRemoteApp.cpp in Sources */,
+				9F3B918A246B595700830DBF /* UdpClient.cpp in Sources */,
+				9F3B9190246B595700830DBF /* ServerInterface.cpp in Sources */,
+				9F3B918B246B595700830DBF /* TcpClient.cpp in Sources */,
+				9F3B9192246B595700830DBF /* WaitTimer.cpp in Sources */,
+				9F3B9189246B595700830DBF /* UdpSession.cpp in Sources */,
+				9F3B9191246B595700830DBF /* TcpSession.cpp in Sources */,
+				9F3B918D246B595700830DBF /* DispatcherInterface.cpp in Sources */,
+				9F3B9256246C87DF00830DBF /* SocketManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CINDER_PATH = ../../../Cinder_v0.9.2;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = FacialMoCapRemote;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CINDER_PATH = ../../../Cinder_v0.9.2;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/macosx/$(CONFIGURATION)/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = FacialMoCapRemote;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../Cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../Cinder;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "FacialMoCapRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FacialMoCapRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
