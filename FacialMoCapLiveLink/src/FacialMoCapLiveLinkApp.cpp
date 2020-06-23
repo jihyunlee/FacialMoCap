@@ -27,7 +27,7 @@ private:
     bool validateIpAddress(const string& address);
     
 	OSCManagerRef mOSCManager;
-    vector<SocketManager> mSockets;
+    vector<SocketManagerRef> mSockets;
     uint16_t mIncomingPort = INCOMING_PORT;
     uint16_t mOutgoingPort = OUTGOING_PORT;
     vector<string> mIpAddresses;
@@ -46,9 +46,9 @@ void FacialMoCapLiveLinkApp::setup()
 	mOSCManager->getUDPReceiver()->setListener("/ERR", bind(&FacialMoCapLiveLinkApp::onOSCReceived, this, std::placeholders::_1));
 	mOSCManager->getUDPReceiver()->setListener("/W", bind(&FacialMoCapLiveLinkApp::onOSCReceived, this, std::placeholders::_1));
 
-    SocketManager* socket = new SocketManager();
+    SocketManagerRef socket = make_shared<SocketManager>();
 	socket->createClient(io_service(), "127.0.0.1", OUTGOING_PORT);
-    mSockets.push_back(*socket);
+    mSockets.push_back(socket);
     
     mParams = params::InterfaceGl::create( getWindow(), "Facial MoCap LiveLink Configuration", toPixels( ivec2( getWindowWidth()-30, getWindowHeight()-30 ) ) );
     mParams->addText( "iOS", "label=`iOS config`" );
@@ -129,16 +129,16 @@ void FacialMoCapLiveLinkApp::onUpdateIpAddress()
             
             bool alreadyExist = false;
             for (auto &socket : mSockets) {
-                if(!socket.getIpAddress().compare(address)) {
+                if(!socket->getIpAddress().compare(address) && socket->isConnected()) {
                     alreadyExist = true;
                 }
             }
             
             if(!alreadyExist) {
                 CI_LOG_I(address << " added to the list");
-                SocketManager* socket = new SocketManager();
+                SocketManagerRef socket = make_shared<SocketManager>();
                 socket->createClient(io_service(), address, OUTGOING_PORT);
-                mSockets.push_back(*socket);
+                mSockets.push_back(socket);
             }
         }
         else {
@@ -152,7 +152,7 @@ void FacialMoCapLiveLinkApp::broadcast(const string& message)
     CI_LOG_I(message);
     string _message = message;
     for (auto &socket : mSockets) {
-        socket.write(_message);
+        socket->write(_message);
     }
 }
 
